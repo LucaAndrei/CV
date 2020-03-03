@@ -1,0 +1,33 @@
+@media (min-width:576px) {
+    .block-content .services-list .data {
+        &:nth-child(even) {
+            border-right: 1px solid #EAEAEA;
+            border-bottom: none;
+        }
+    }
+}
+@media (min-width:768px) {
+    .container.mt-80.mb-80 {
+        margin-top: 150px;
+        margin-bottom: 150px;
+    }
+    .lead-intro {
+        padding: 0 80px;
+    }
+    .content {
+        padding: 100px;
+    }
+}
+@media (min-width:992px) {
+    #header {
+        .profile {
+            .name {
+                h5 {
+                    font-size: 0.875rem;
+                }
+            }
+        }
+}
+@media (min-width:1200px) {
+
+}

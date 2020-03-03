@@ -1,0 +1,50 @@
+.hover-effect{
+    background: transparent;
+    position: relative;
+    overflow: hidden;
+    transition: all .5s;
+  }
+
+  /* //// Default effect: Slide from Top  //// */
+
+  .hover-effect:before,
+  .hover-effect:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    z-index: -1;
+    transform: translate3D(0,-100%,0); /* move elements above button so they don't appear initially */
+    transition: all .5s;
+  }
+
+
+  .hover-effect:before{
+    z-index: -2;
+    transform: translate3D(0,0,0);
+  }
+
+  .hover-effect:hover{
+      color: white;
+  }
+
+  .hover-effect:hover:after{
+    transform: translate3D(0,0,0);
+    transition: all .5s;
+  }
+
+  /* //// Slide Left  //// */
+
+  .slideleft:after{
+    top: 0;
+    z-index: -1;
+    transform: translate3D(-101%,0,0);
+  }
+
+  .slideleft:hover:after{
+    transform: translate3D(0,0,0);
+    transition: all .5s;
+  }
